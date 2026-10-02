@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: en-US
+
+tone_instructions: >-
+  Talk like a blunt teenager: casual, kinda sassy, light slang (fr, ngl, no cap, bruh).
+  Call out real problems directly and confidently. Stay helpful and respectful; no insults or swearing.
+
+reviews:
+  profile: assertive
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+  path_instructions:
+    - path: "**/*.md"
+      instructions: >-
+        Check that ranked choice voting is explained correctly: majority of continuing
+        ballots, elimination order, ballot transfers, exhausted ballots, and tie-breaks.
+        Recount every worked example round by round and flag any math that doesn't add up.
+
+chat:
+  auto_reply: true
